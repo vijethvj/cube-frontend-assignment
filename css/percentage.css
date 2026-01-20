@@ -1,0 +1,50 @@
+
+#percentage-section {
+    background: linear-gradient(to bottom, #032E15, #016630);
+}
+#percentage-section .stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 64px
+}
+
+@media (min-width: 1200px) {
+    /* #percentage-section .container {
+        max-width: 1200px;
+        
+    } */
+}
+
+#percentage-section .stat-item {
+    text-align: center;
+    width: 215px;
+}
+
+#percentage-section .stat-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 100%;
+}
+
+#percentage-section .stat-label {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 100%;
+    margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+    #percentage-section .stats-wrapper {
+        flex-direction: column;
+    }
+    #percentage-section .stat-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #percentage-section .stat-item:last-child {
+        margin-bottom: 0px;
+    }
+}

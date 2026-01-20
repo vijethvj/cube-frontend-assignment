@@ -1,0 +1,95 @@
+#GTG-table-section {
+    padding: 70px 0 104px;
+}
+#GTG-table-section .three-dash {
+    color: #032E15;
+    text-align: center;
+}
+#GTG-table-section .table-section-header {
+    margin: 50px 0 58px;
+    text-align: center;
+}
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.comparison-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 950px;
+}
+.comparison-table th,
+.comparison-table td {
+    border-bottom: 1px solid #666666;
+}
+.comparison-table th.gtg-cell,
+.comparison-table td.gtg-cell {
+    background: #F0FDF4;
+    border-bottom: 1px dashed #666666;
+}
+.comparison-table th:nth-child(1) {
+    width: 30%;
+}
+.comparison-table .quality-header {
+    text-align: left;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #322D2D;
+    padding-left: 15px;
+}
+.comparison-table th:nth-child(2),
+.comparison-table th:nth-child(3) {
+    width: 20%;
+}
+.comparison-table .product-header {
+    padding-top: 38px;
+}
+.comparison-table .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comparison-table th.gtg-cell .product-image {
+    padding-top: 15px;
+}
+.comparison-table th .product-name {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 25px 0 28px;
+    color: #000;
+}
+.comparison-table th.gtg-cell .product-name {
+    font-size: 20px;
+    line-height: 100%;
+    margin-top: 7px;
+}
+.comparison-table td.quality-cell {
+    padding: 18px 15px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #666;
+}
+.comparison-table td.value-cell {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #666;
+}
+.comparison-table td.icon-cell > div {
+    display: flex;
+    justify-content: center;
+}
+
+.table-cta-wrapper {
+    margin-top: 82px;
+    display: flex;
+    justify-content: center;
+}
+.table-cta-wrapper a.cta-btn {
+    width: 195px;
+}

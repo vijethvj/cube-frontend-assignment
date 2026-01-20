@@ -1,0 +1,115 @@
+.carousel-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Set fixed height */
+    overflow: hidden;
+}
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.carousel-slide.active {
+    opacity: 1;
+}
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    bottom: 18.5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+}
+@media (min-width: 1200px) {
+    .carousel-arrow:hover {
+        transform: scale(1.1);
+    }
+}
+
+.carousel-arrow.left-arrow {
+    left: 29px;
+}
+.carousel-arrow.right-arrow {
+    right: 29px;
+}
+
+.carousel-dots {
+    display: flex;
+    bottom: 34px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 10;
+}
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #032E15;
+  background: rgba(255, 255, 255, 0.7); /* background for inactive dots */
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.carousel-dots .dot.active {
+    background: #032E15;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    width: 100%;
+    gap: 28px;
+}
+.carousel-thumbnails .thumbnail-tab {
+    width: calc(25% - 21px);
+    aspect-ratio: 1;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    opacity: 0.5;
+}
+.carousel-thumbnails .thumbnail-tab.active {
+    box-shadow: 0 4px 8px 0 rgba(3, 46, 21, 0.2);
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+@media (min-width: 1200px) {
+    .carousel-thumbnails .thumbnail-tab:hover {
+        opacity: 1;
+        transition: transform 0.3s ease;
+    }
+    .carousel-thumbnails .thumbnail-tab.active:hover {
+        opacity: 1;
+    }
+}
+
+.thumbnail-tab img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+#accordion-image-section .right-image-section img {
+    border-radius: 50px;
+}
+
+

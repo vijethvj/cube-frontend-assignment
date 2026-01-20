@@ -1,0 +1,329 @@
+.subscription-details {
+    display: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+.subscription-details.active {
+    display: block;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    animation: slideInContent 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes slideInContent {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.perfume-cart-section .rating {
+    display: flex;
+    margin-bottom: 20px
+}
+.perfume-cart-section .rating .stars {
+    align-self: center;    
+    margin-right: 6px;
+}
+.perfume-cart-section .rating .rating-text {
+    font-weight: 300;
+    font-size: 13px;
+    color: #032E15;
+}
+.perfume-cart-section .cart-description {
+    margin-bottom: 31px;
+}
+.perfume-cart-section .cart-description p {
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 100%;
+    color: #032E15;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 0.81px solid #032E15;
+    border-radius: 50%;
+    background: #ffffff;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    top: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
+}
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    width: 10.2px;
+    height: 10.2px;
+    background: linear-gradient(to bottom, #032E15, #016630);
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.subscription-header label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+    color: #032E15;
+    cursor: pointer;
+}
+.subscription-header {
+    display: flex;
+    justify-content: space-between;
+}
+.subscription-header .subscription-type {
+    align-self: center;
+}
+.subscription-header .price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #032E15;
+}
+.subscription-header .price span {
+    font-weight: 300;
+    color: #B8B8B8;
+    text-decoration: line-through;
+}
+
+
+.subscription-option {
+    border: 1px solid #B8B8B8;
+    border-radius: 6px;
+    margin-bottom: 11px;   
+}
+.subscription-option .subscription-wrapper {
+    padding: 20px 20px 26px 20px;
+}
+.subscription-option .most-popular {
+    background: linear-gradient(to left, #032E15, #008236, #00C950);
+    color: #fff;
+    font-weight: 700px;
+    font-size: 20.23px;
+    line-height: 24.27px;
+    text-align: center;
+    padding: 11.12px 0 7.36px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom: 1px solid #B8B8B8;
+} 
+.subscription-option .options-wrapper {
+    display: flex;
+    margin-bottom: 25px;
+}
+.subscription-details {
+    padding: 0 30px;
+    margin-top: 12.5px;
+}
+.subscription-details .fragrance-selection {
+    border-top: 1px solid #919798;
+    padding-top: 18px;
+}
+.subscription-details .fragrance-selection:nth-child(2) {
+    border-top: 0px;
+    padding-top: 0px;
+}
+.subscription-details h3 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    color: #032E15;
+    margin-bottom: 14px;
+}
+.subscription-details .fragrance-option {
+    width: 127.11px;
+    margin-right: 11.62px;
+    background: #F9F9F9;
+    border: none;
+    padding: 7px 7px 18px 7px;
+    border-radius: 4.95px;
+    position: relative;
+}
+.subscription-details .fragrance-option .best-seller {
+    position: absolute;
+    top: -7px;
+    right: 2px;
+    background: linear-gradient(to bottom, #032E15, #016630);
+    color: #ffffff;
+    font-size: 7.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    padding: 1.5px 5px;
+    border-top-left-radius: 4.95px;
+    border-bottom-right-radius: 4.95px;
+    box-shadow: 0 2px 8px rgba(3, 46, 21, 0.3);
+    z-index: 5;
+    /* white-space: nowrap; */
+    /* transform: rotate(-2deg); */
+     animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+.subscription-details .fragrance-option input[type="radio"] {
+    width: 10px;
+    height: 10px;
+    border: 0.82px solid #016630;
+    top: 0px;
+    margin-right: 6px;
+}
+.subscription-details .fragrance-option input[type="radio"]:checked::before {
+    width: 5.3px;
+    height: 5.3px;
+    background: linear-gradient(to bottom, #032E15, #016630);
+}
+.subscription-details .fragrance-option label span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #016630;
+}
+.subscription-details .fragrance-image {
+    display: flex;
+    justify-content: center;
+}
+.subscription-details .fragrance-image img {
+    width: 55px;
+    margin-top: 12px;
+}
+
+.subscription-details .whats-included-block {
+    display: flex;
+}
+.subscription-details .whats-included-block p {
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 100%;
+    color: #6F7577;
+}
+.subscription-details .whats-included-block .days-30 {
+    margin-right: 15.25px;
+    border: 1px solid #919798;
+    border-radius: 6.07px;
+    padding: 8.23px 11.46px;
+    width: 167px;
+    flex-shrink: 0;
+}
+.subscription-details .whats-included-block .days-30 .img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+.subscription-details .whats-included-block .one-time-block-wrapper {
+    border: 1px solid #919798;
+    border-radius: 6.07px;
+    padding: 8.23px 11.46px;
+    flex: 1;
+}
+.subscription-details .whats-included-block .one-time-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.subscription-details .whats-included-block .one-time-block img {
+    width: 55px;
+}
+.subscription-details strong {
+    font-weight: 700;
+    color: #032E15;
+}
+.subscription-details .shopping-details ul {
+    padding: 0px;
+    margin-top: 20px;
+    list-style: none;
+}
+.subscription-details .shopping-details ul li {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #032E15;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 24px;
+}
+.subscription-details .shopping-details ul li::before {
+    content: '';
+    position: absolute;
+    background: url('../images/SealCheck.svg');
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 4px
+}
+.subscription-details .shopping-details ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.perfume-cart-section .cart-btn-wrapper {
+    margin-top: 24px;
+}
+.perfume-cart-section .cart-btn-wrapper .cta-btn {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .subscription-option .subscription-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subscription-header .price {
+        font-size: 15px;
+    }
+    .subscription-header label {
+        font-size: 15px;
+    }
+    .subscription-details {
+        padding: 0 15px;
+    }
+    .subscription-option .options-wrapper {
+        justify-content: space-between;
+    }
+    .subscription-details .fragrance-option {
+        width: 33%;
+        margin-right: 0px
+    }
+    .subscription-details .fragrance-image img {
+        width: 30px;
+    }
+    .subscription-details .fragrance-option .best-seller {
+        font-size: 5px;
+    }
+    .subscription-details .fragrance-option label span {
+        font-size: 11px;
+    }
+    .subscription-details .whats-included-block {
+        flex-direction: column;
+    }
+    .subscription-details .whats-included-block .days-30 {
+       margin-bottom: 30px;
+    }
+    .subscription-details .whats-included-block .one-time-block {
+        margin-top: 10px;
+    }
+    .subscription-details .whats-included-block .one-time-block img {
+        width: 30px;
+    }
+}
